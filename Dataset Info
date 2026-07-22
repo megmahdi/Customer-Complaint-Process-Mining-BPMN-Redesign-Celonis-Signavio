@@ -1,0 +1,47 @@
+# Dataset Information
+
+## Dataset
+
+**BPI Challenge 2016 – Customer Complaints**
+
+This dataset originates from the **Business Process Intelligence (BPI) Challenge 2016** and contains customer complaint records from the Dutch Employee Insurance Agency (UWV). It is widely used for process mining education and research.
+
+The dataset included in this repository (`BPI2016_Complaints.csv`) was used to perform process discovery and analysis in **Celonis**, followed by process redesign in **SAP Signavio**.
+
+---
+
+## Dataset Structure
+
+The dataset contains **18 attributes** describing customer complaints, including:
+
+| Column | Description |
+|---------|-------------|
+| CustomerID | Unique customer identifier |
+| ComplaintDossierID | Complaint case identifier |
+| ComplaintID | Individual complaint identifier |
+| ContactDate | Date the complaint was recorded |
+| AgeCategory | Customer age group |
+| Gender | Customer gender |
+| Office_U / Office_W | Internal office identifiers |
+| ContactChannelID | Communication channel used |
+| ComplaintTheme / ComplaintSubtheme / ComplaintTopic | Complaint classification |
+| ComplaintTheme_EN / ComplaintSubtheme_EN / ComplaintTopic_EN | English translations of the complaint categories |
+
+The complaint themes include topics such as payment delays, incorrect information, missed appointments, communication issues, and document processing.
+
+---
+
+## Project Usage
+
+The dataset was imported into **Celonis Process Mining** to:
+
+- Discover the existing complaint handling process.
+- Analyze process variants and case behavior.
+- Identify process inefficiencies and improvement opportunities.
+- Support the redesign of the workflow using **SAP Signavio (BPMN 2.0)**.
+
+---
+
+## Notes
+
+Although the dataset provides rich complaint information, the event log contains only a single recorded activity per complaint case. This limits end-to-end process analysis, making throughput times and waiting periods unobservable. These limitations were considered during the redesign of the complaint handling process.
