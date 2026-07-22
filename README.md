@@ -43,7 +43,7 @@ The redesigned BPMN model focused on:
 README.md
 DatasetInfo.md
 BPI2016_Complaints.csv
-BPMN Assignment.pdf
+Report: Customer Complaint Process Mining & BPMN Redesign.pdf
 images/
 ├── process_explorer_1.png
 ├── process_explorer_2.png
